@@ -14,9 +14,12 @@ def write_line_to_file():
             continue
 #if no break out of loop
         elif add_line in ["N", "NO", "no", "No", "n"]:
+            print('Have a fun day!')
             break
         else:
             print("Invalid input! Please answer either YES or NO")
 #open mylife.txt for writing
     with open("mylife.txt", "w") as my_file:
         my_file.write("\n".join(lines))
+#calls the method/function
+write_line_to_file()
