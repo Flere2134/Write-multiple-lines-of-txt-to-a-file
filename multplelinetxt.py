@@ -5,6 +5,7 @@ def write_line_to_file():
 #ask user to write a line of text
     text = input('Write something you want to say or ask: ')
 #add line of text to list
+    lines.append(text)
 #ask user if wants to write another line
 #if yes write and add another line of text
 #if no end program
