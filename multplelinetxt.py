@@ -3,11 +3,18 @@ def write_line_to_file():
 #create a list for lines
     lines = []
 #ask user to write a line of text
-    text = input('Write something you want to say or ask: ')
+    while True:
+        text = input('Write something you want to say or ask: ')
 #add line of text to list
-    lines.append(text)
+        lines.append(text)
 #ask user if wants to write another line
-    add_line = input('Do you want to add more lines of text? ')
+        add_line = input('Do you want to add more lines of text? ')
 #if yes write and add another line of text
-#if no end program
+        if add_line in ["Y", "YES", "yes", "Yes", "y"]:
+            continue
+#if no break out of loop
+        elif add_line in ["N", "NO", "no", "No", "n"]:
+            break
+        else:
+            print("Invalid input! Please answer either YES or NO")
 #open mylife.txt for writing
