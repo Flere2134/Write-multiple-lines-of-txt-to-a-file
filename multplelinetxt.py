@@ -18,3 +18,5 @@ def write_line_to_file():
         else:
             print("Invalid input! Please answer either YES or NO")
 #open mylife.txt for writing
+    with open("mylife.txt", "w") as my_file:
+        my_file.write("\n".join(lines))
