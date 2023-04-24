@@ -7,6 +7,7 @@ def write_line_to_file():
 #add line of text to list
     lines.append(text)
 #ask user if wants to write another line
+    add_line = input('Do you want to add more lines of text? ')
 #if yes write and add another line of text
 #if no end program
 #open mylife.txt for writing
